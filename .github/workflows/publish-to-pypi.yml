@@ -14,12 +14,5 @@ jobs:
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Install dependencies
         run: poetry install
-      - name: Build package
-        run: poetry build
-      - name: Install twine
-        run: pip install twine
-      - name: Publish package
-        env:
-          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-        run: twine upload dist/*
+      - name: Build package and deploy
+        run: poetry publish --username ${{ secrets.PYPI_USERNAME }}  --password ${{ secrets.PYPI_PASSWORD }} --build
