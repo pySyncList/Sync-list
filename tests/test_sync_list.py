@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from synclist import SyncList
+from sync_list import SyncList
 
 
 class TestSyncList(unittest.TestCase):

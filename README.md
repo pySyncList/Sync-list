@@ -8,13 +8,13 @@ need to save data between program sessions or if you need to save the state of d
 You can install SyncList using pip:
 
 ```bash
-pip install sync-list
+pip install sync_list
 ```
 
 # Usage
 
 ```python
-from synclist import SyncList
+from sync_list import SyncList
 
 # Creating SyncList object with initial data
 my_list = SyncList([1, 2, 3])
