@@ -45,6 +45,6 @@ my_list.reverse()
 When the `sync()` method is called, the data in the list will be written to a file in JSON format. On the next program
 run, the data will be loaded from the file and available for use in the SyncList object.
 
-#Developers
+# Developers
 
 - Azreil-OFD (fantom2413@gmail.com)

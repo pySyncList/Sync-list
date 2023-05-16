@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sync-list"
-version = "1.0.0"
+version = "1.0.1"
 description = "SyncList - список Python с автоматической синхронизацией данных с файлом JSON."
 authors = ["Azreil-OFD <fantom2413@gmail.com>"]
 readme = "README.md"
