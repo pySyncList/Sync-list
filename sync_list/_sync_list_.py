@@ -43,6 +43,15 @@ class SyncList:
 
     def __repr__(self):
         return repr(self._data[self.bucket])
+        # Метод для сериализации в JSON
+
+    def to_json(self):
+        return json.dumps(self._data[self.bucket])
+
+    @classmethod
+    def from_json(cls, json_str, filename='data.json', bucket_name='default'):
+        items = json.loads(json_str)
+        return cls(items, filename, bucket_name)
 
     def index(self, item):
         return self._data[self.bucket].index(item)
