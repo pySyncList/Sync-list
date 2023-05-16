@@ -4,7 +4,7 @@ version = "1.0.2"
 description = "SyncList - список Python с автоматической синхронизацией данных с файлом JSON."
 authors = ["Azreil-OFD <fantom2413@gmail.com>"]
 readme = "README.md"
-urls = ["https://github.com/pySyncList/sync-list/"]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
